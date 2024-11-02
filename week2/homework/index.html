@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.svgrepo.com/show/438745/pet-round.svg" type="image/svg">
+    <title>Опрос для обладателей магических животных</title>
+</head>
+
+<body>
+    <h1 style="color: burlywood;">Вы и Ваше магическое чудо</h1>
+    <form>
+        <div>
+            <label for="name">Кличка питомца</label>
+            <input type="text" id="name">
+        </div>
+        <div>
+            <fieldset>
+                <legend>О владельце</legend>
+                <label for="man">Имя</label>
+                <input type="text" placeholder="Иванов Иван Иванович" id="man">
+                <br><label for="tel">Номер телефона</label>
+                <input type="tel" placeholder="+7(XXX)XXX-XX-XX" id="tel">
+            </fieldset>
+        </div>
+        <div>
+            <label for="pet">Порода питомца</label>
+            <select name="Breed" id="pet">
+                <option value="">-Выберите породу-</option>
+                <option value="Nargl">Наргл</option>
+                <option value="Murlokoml">Мурлокомль</option>
+                <option value="Catruk">Катрук</option>
+                <option value="Ningen">Нинген</option>
+                <option value="Kalupalik">Калупалик</option>
+            </select>
+        </div>
+        <div>
+            <label for="food">Чем питается?</label>
+            <br><input type="checkbox" id="food"> Натуральный корм
+            <br><input type="checkbox" id="food"> Сухой корм
+            <br><input type="checkbox" id="food"> Влажный корм
+        </div>
+        <div>
+            <label for="sex">Пол животного:</label>
+            <br>Самка<input type="radio" name="sex">
+            <br>Самец<input type="radio" name="sex">
+        </div>
+        <div>
+            <label for="com">Дополнительная информация о животном:</label>
+            <br><textarea name="com" id="com" placeholder="Написать комментарий"></textarea>
+        </div>
+        <div>
+            <label for="picture">Фото животного:</label>
+            <br><input type="file" for="picture">
+        </div>
+
+
+        <br><input type="submit" value="Сохранить">
+    </form>
+
+</body>
+
+</html>
